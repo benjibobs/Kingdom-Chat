@@ -1,0 +1,15 @@
+name: KingdomChat
+version: 1.3
+description: Adds kingdom chat and other custom features
+author: benjibobs
+main: com.github.benjibobs.neweden.Main
+commands:
+  global:
+    description: Switch to global chat
+    default: true
+  kingdom:
+    description: Switch to kingdom chat
+    default: true
+  kingdomchat:
+    description: Info page
+    default: true
