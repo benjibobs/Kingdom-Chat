@@ -83,9 +83,10 @@ public class Main extends JavaPlugin implements Listener{
 			            if (i > 0) sb.append(" ");
 			            sb.append(args[i]);
 			        }
-			            cl.globalchat.put(psend.getName(), null);
+			        	cl.globalchat.remove(psend.getName());
 			            psend.chat(sb.toString());
-			            cl.globalchat.remove(psend.getName());
+			            
+			            cl.globalchat.put(psend.getName(), null);
 					
 				}
 				
