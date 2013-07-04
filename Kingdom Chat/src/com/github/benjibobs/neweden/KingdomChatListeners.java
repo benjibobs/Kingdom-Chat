@@ -334,6 +334,42 @@ public class KingdomChatListeners implements Listener {
 		 			}
 		 			
 		 		}
+			}else if(player.hasPermission("talk.tortuga.user")){
+				for(Player players : Bukkit.getOnlinePlayers()){
+		 			if(players.hasPermission("talk.tortuga.user") || players.hasPermission("talk.tortuga.noble") || players.hasPermission("talk.tortuga.council") || players.hasPermission("talk.tortuga.king")){
+		 				
+		 				players.sendMessage("(Citizen) " + player.getDisplayName() + ": " + msg);
+		 				event.setCancelled(true);
+		 			}
+		 			
+		 		}
+			}else if(player.hasPermission("talk.tortuga.noble")){
+				for(Player players : Bukkit.getOnlinePlayers()){
+		 			if(players.hasPermission("talk.tortuga.user") || players.hasPermission("talk.tortuga.noble") || players.hasPermission("talk.tortuga.council") || players.hasPermission("talk.tortuga.king")){
+		 				
+		 				players.sendMessage("(Nobleman) " + player.getDisplayName() + ": " + msg);
+		 				event.setCancelled(true);
+		 			}
+		 			
+		 		}
+			}else if(player.hasPermission("talk.tortuga.council")){
+				for(Player players : Bukkit.getOnlinePlayers()){
+		 			if(players.hasPermission("talk.tortuga.user") || players.hasPermission("talk.tortuga.noble") || players.hasPermission("talk.tortuga.council") || players.hasPermission("talk.tortuga.king")){
+		 				
+		 				players.sendMessage("(Council) " + player.getDisplayName() + ": " + msg);
+		 				event.setCancelled(true);
+		 			}
+		 			
+		 		}
+			}else if(player.hasPermission("talk.tortuga.king")){
+				for(Player players : Bukkit.getOnlinePlayers()){
+		 			if(players.hasPermission("talk.tortuga.user") || players.hasPermission("talk.tortuga.noble") || players.hasPermission("talk.tortuga.council") || players.hasPermission("talk.tortuga.king")){
+		 				
+		 				players.sendMessage("(King) " + player.getDisplayName() + ": " + msg);
+		 				event.setCancelled(true);
+		 			}
+		 			
+		 		}
 			}
 			
 			
